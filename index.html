@@ -8,23 +8,48 @@
 
   <link rel="stylesheet" href="css/style.css"/>
   <link href="https://fonts.googleapis.com/css?family=Poiret+One|Poppins" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Work+Sans:200" rel="stylesheet">
 
 </head>
+  <body>
 
-<body>
-<div id="particles"> </div>
+  <div id="particles"> </div>
+  <section id="intro" class="slide">
+      <h1 id="name"> Jonathan Wong </h1>
+      <h1 id="description"> S T U D E N T.&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;D E V E L O P E R.&nbsp;&nbsp;&nbsp;&nbsp;C R E A T O R. </h1>
+  </section>
 
-<section id="main" class ="mainpage">
-  <div id="intro">
-    <h1> Jonathan Wong </h1>
-    <h1 id ="description"> S T U D E N T.&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;D E V E L O P E R.&nbsp;&nbsp;&nbsp;&nbsp;C R E A T O R. </h1>
-  </div>
-</section>
+  <section id="about" class="slide">
+    <h1 id="aboutme"> About Me </h1>
+    <p id="summary"> Lorem ipsum dolor sit amet, consectetur adipisicing elit,<br> sed do eiusmod tempor
+       incididunt ut labore et dolore magna aliqua. <br> Ut enim ad minim veniam, quis nostrud exercitation
+       ullamco laboris nisi ut aliquip ex ea commodo <br>consequat. Duis aute irure dolor in reprehenderit
+       in voluptate velit esse cillum dolore eu fugiat nulla pariatur. <br>Excepteur sint occaecat cupidatat
+       non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. <p>
+  </section>
 
-  <script src="js/jquery1.11.1min.js"></script>
-  <script src="js/particledemo.js"></script>
-  <script src="js/particleground.js"></script>
-  <script src="js/particleground.min.js"></script>
-</div>
 
 </body>
+
+
+
+
+
+
+<script src="js/jquery1.11.1min.js"></script>
+<script src="js/particledemo.js"></script>
+<script src="js/particleground.js"></script>
+<script src="js/particleground.min.js"></script>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
+<script src="https://github.com/kswedberg/jquery-smooth-scroll/blob/master/jquery.smooth-scroll.min.js"></script>
+<script>
+$('.smooth').on('click', function() {
+    $.smoothScroll({
+        scrollElement: $('body'),
+        scrollTarget: '#' + this.id
+    });
+
+    return false;
+});
+</script>

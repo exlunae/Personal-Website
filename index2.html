@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<head>
+  <meta charset="utf-8"/>
+  <meta name="description" content="Jonathan Wong's Personal Website and Portfolio">
+  <meta name="author" content="Jonathan Wong">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+
+  <title> Jonathan Wong </title>
+
+  <link rel="stylesheet" href="css/style2.css"/>
+  <link href="https://fonts.googleapis.com/css?family=Poiret+One|Poppins" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Work+Sans:200" rel="stylesheet">
+
+</head>
+  <body>
+
+  <section class="intro">
+    <div id="particles"> </div>
+
+    <div class="inner">
+        <h1 id="name"> Jonathan Wong </h1>
+        <h1 id="description"> S T U D E N T.&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;D E V E L O P E R.&nbsp;&nbsp;&nbsp;&nbsp;C R E A T O R. </h1>
+    </div>
+
+
+  </section>
+
+  <section class="about">
+    <img id="profile" class="img-responsive" src="profile.jpeg" alt="" width="350" height="400">
+    <div class="about-content">
+      <div class="page-header">
+        <h1 id="aboutme"> About Me </h1>
+      </div>
+      <p id="summary"> Hello! I am a second year Computer Science student at San Jose State
+        University. Originally from the Central Valley in California, I came to Silicon Valley
+        to further my interests in Computer Science and technology. I develop on the side,
+        focusing my efforts towards not mastering one technology, but in finding myself.
+        Whenever I'm not building (or breaking) things, I like to indulge myself in my hobbies.
+        You can find me outside hiking or playing with my dog, exploring the city (and its food), or
+        enjoying a great video game. <br><br> I am currently available for summer internships and
+        Co-Op opportunities. You can find my contact information below.
+        <p>
+    </div>
+  </section>
+
+
+  </body>
+
+  <script src="js/jquery1.11.1min.js"></script>
+  <script src="js/particledemo.js"></script>
+  <script src="js/particleground.js"></script>
+  <script src="js/particleground.min.js"></script>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
+  <script src="https://github.com/kswedberg/jquery-smooth-scroll/blob/master/jquery.smooth-scroll.min.js"></script>
+  <script>
+  $('.smooth').on('click', function() {
+      $.smoothScroll({
+          scrollElement: $('body'),
+          scrollTarget: '#' + this.id
+      });
+
+      return false;
+  });
+  </script>
