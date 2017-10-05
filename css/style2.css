@@ -65,7 +65,7 @@ img {
 
 #description {
   font-size: 15px;
-  margin-left: 20%;
+  margin-left: 18.5%;
   font-family: 'Poiret One', cursive;
   color: white;
   margin-top: 28.5%;
@@ -73,23 +73,26 @@ img {
 }
 
 .about {
-  height: 45%;
+  display: inline-block;
+  height: 60%;
   width: 100%;
   text-align: center;
   font-family: 'Helvetica', sans-serif;
+  background: #ededed;
 }
 
 .about-content {
-  margin-top: 5%;
+  margin-top: 7%;
   margin-left: 40%;
   margin-right: 10%;
 }
 
 #profile {
   transform: rotate(90deg);
-  margin-left: 7%;
-  margin-top: 2%;
+  margin-left: 9%;
+  margin-top: 9%;
   float: left;
+
 }
 
 #aboutme {
@@ -99,7 +102,12 @@ img {
 }
 
 #summary {
-  font-size: 15px;
+  font-size: 16px;
   text-align: justify;
   font-family: 'Work Sans', sans-serif;
+}
+
+.projects {
+  height: 60%;
+  background: #b1b299; /** #262626; */
 }
