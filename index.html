@@ -4,6 +4,11 @@
   <meta name="description" content="Jonathan Wong's Personal Website and Portfolio">
   <meta name="author" content="Jonathan Wong">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+
   <title> Jonathan Wong </title>
 
   <link rel="stylesheet" href="css/style.css"/>
@@ -14,42 +19,114 @@
 </head>
   <body>
 
-  <div id="particles"> </div>
-  <section id="intro" class="slide">
-      <h1 id="name"> Jonathan Wong </h1>
-      <h1 id="description"> S T U D E N T.&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;D E V E L O P E R.&nbsp;&nbsp;&nbsp;&nbsp;C R E A T O R. </h1>
+  <section class="intro">
+    <div id="particles"> </div>
+
+    <div class="inner">
+        <h1 id="intro-name"> Jonathan Wong </h1>
+        <h1 id="description"> S T U D E N T.&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;D E V E L O P E R.&nbsp;&nbsp;&nbsp;&nbsp;I N N O V A T O R. </h1>
+    </div>
+
+
   </section>
 
-  <section id="about" class="slide">
-    <h1 id="aboutme"> About Me </h1>
-    <p id="summary"> Lorem ipsum dolor sit amet, consectetur adipisicing elit,<br> sed do eiusmod tempor
-       incididunt ut labore et dolore magna aliqua. <br> Ut enim ad minim veniam, quis nostrud exercitation
-       ullamco laboris nisi ut aliquip ex ea commodo <br>consequat. Duis aute irure dolor in reprehenderit
-       in voluptate velit esse cillum dolore eu fugiat nulla pariatur. <br>Excepteur sint occaecat cupidatat
-       non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. <p>
+  <section class="about">
+    <img id="profile" class="img-responsive" src="images/profile.jpeg" alt="" width="300" height="">
+    <div class="about-content">
+      <div class="page-header">
+        <h1 id="aboutme"> About Me </h1>
+      </div>
+      <p id="summary"> Hello! I am a second year Computer Science student at San Jose State
+        University. Originally from the Central Valley in California, I came to Silicon Valley
+        to further my interests in Computer Science and technology. I develop on the side,
+        focusing my efforts towards mastering the fundamentals in hopes of becoming a versatile engineer.
+        Whenever I'm not building (or breaking) things, I like to indulge in my hobbies.
+        You can find me outside hiking or playing with my dog, exploring the city (and its food), or
+        enjoying a great video game. <br><br> I am currently available for summer internships and
+        Co-Op opportunities. You can find my contact information below or check out my
+        <a href="url">resumé</a>.
+        <p>
+    </div>
   </section>
 
+  <section class="projects">
+    <div id="header-limiter">
+      <div class="page-header">
+        <h1 id="project-title"> Projects </h1>
+      </div>
+    </div>
 
-</body>
+    <div id="project-slider" class="carousel slide" data-ride="carousel">
+      <!-- Wrapper for slides -->
+
+      <div class="carousel-inner">
+        <div class="item active" class="slide">
+          <img src="images/projects/calendar-ex.png" class="project-imgs" alt="Calendar">
+            <h3 class="project-name">Desktop Calendar</h3>
+            <p class ="project-description">*Source code privatized.</p>
+        </div>
+
+        <div class="item" class ="slide">
+          <img src="images/projects/FastqFasta_pic.png" class="project-imgs" alt="Sudoku Solver">
+            <h3 class="project-name">Fastq to Fasta Converter</h3>
+            <button type="button" class="btn btn-primary btn-xs" onclick="location.href ='https://github.com/exlunae/SudokuSolver';">Github</button>
+        </div>
+
+        <div class="item">
+          <img src="ny.jpg" alt="Sudoku Solver">
+          <div class="carousel-caption">
+            <h3>Sudoku Solver</h3>
+            <p>*Source code privatized.</p>
+          </div>
+        </div>
+      </div>
+
+      <!-- Left and right controls -->
+      <a class="left carousel-control" href="#project-slider" data-slide="prev">
+        <span class="glyphicon glyphicon-chevron-left"></span>
+        <span class="sr-only">Previous</span>
+      </a>
+      <a class="right carousel-control" href="#project-slider" data-slide="next">
+        <span class="glyphicon glyphicon-chevron-right"></span>
+        <span class="sr-only">Next</span>
+      </a>
+    </div>
+
+  </section>
+
+  <section class="contact">
+    <div class="page-header">
+      <h1 id="contact-me"> Contact Me </h1>
+    </div>
+    <form id="form" class="topBefore">
+
+		  <input id="name" type="text" placeholder="NAME">
+		  <input id="email" type="text" placeholder="E-MAIL">
+		  <textarea id="message" type="text" placeholder="MESSAGE"></textarea>
+      <input id="submit" type="submit" value="SUBMIT">
+
+    </form>
+  </section>
+  <div id="copyright-footer">
+    <p>Jonathan Wong &copy; 2017</p>
+  </div>
 
 
+  </body>
 
+  <script src="js/jquery1.11.1min.js"></script>
+  <script src="js/particledemo.js"></script>
+  <script src="js/particleground.js"></script>
+  <script src="js/particleground.min.js"></script>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
+  <script src="https://github.com/kswedberg/jquery-smooth-scroll/blob/master/jquery.smooth-scroll.min.js"></script>
+  <script>
+  $('.smooth').on('click', function() {
+      $.smoothScroll({
+          scrollElement: $('body'),
+          scrollTarget: '#' + this.id
+      });
 
-
-
-<script src="js/jquery1.11.1min.js"></script>
-<script src="js/particledemo.js"></script>
-<script src="js/particleground.js"></script>
-<script src="js/particleground.min.js"></script>
-<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
-<script src="https://github.com/kswedberg/jquery-smooth-scroll/blob/master/jquery.smooth-scroll.min.js"></script>
-<script>
-$('.smooth').on('click', function() {
-    $.smoothScroll({
-        scrollElement: $('body'),
-        scrollTarget: '#' + this.id
-    });
-
-    return false;
-});
-</script>
+      return false;
+  });
+  </script>
