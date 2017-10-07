@@ -4,13 +4,17 @@ html, body {
   height: 100%;
   width: 100%;
 }
+
 img {
   display: block;
   max-width: 100%;
   height: auto;
 }
 
+
 /** Introductory Page*/
+
+
 .intro {
   height: 100%;
   width: 100%;
@@ -20,7 +24,6 @@ img {
   display: table;
   top: 0;
   opacity: 0.9;
-
 }
 
 .inner {
@@ -28,23 +31,10 @@ img {
   display: table;
   height: 100%;
   width: 100%;
-  background-image:linear-gradient(to top right, #ffffff 0%, #0099cc 118%);
-   /**linear-gradient(to top right, #003366 10%, #800000 90%) RED BLUE */
+  background-image: linear-gradient(to top right, #ffffff 0%, #0099cc 118%);
+  /**linear-gradient(to top right, #003366 10%, #800000 90%) RED BLUE */
   opacity: 0.7;
   top: 0;
-}
-
-@media screen and (min-width: 449px) and (max-width: 750px) {
-    html{
-		height: 50%;
-		top: 25%;
-    }
-}
-@media screen and (max-width: 448px) {
-    html{
-		height: 40%;
-		top: 30%;
-    }
 }
 
 .content {
@@ -67,12 +57,11 @@ img {
   margin-left: 15%;
   margin-top: 22%;
   font-size: 70px;
-  font-weight:bolder;
+  font-weight: bolder;
   position: absolute;
   color: black;
   top: 0;
   font-family: 'Poiret One', cursive;
-
 }
 
 #description {
@@ -126,7 +115,8 @@ img {
   display: inline-block;
   height: 85%;
   width: 100%;
-  background: #e1e7e8; /** Yellow: #b1b299; */
+  background: #e1e7e8;
+  /** Yellow: #b1b299; */
   font-family: 'Work Sans', sans-serif;
 }
 
@@ -161,14 +151,14 @@ img {
 }
 
 .carousel-control.left, .carousel-control.right {
-    background-image: none;
+  background-image: none;
 }
+
 .project-name {
   font-size: 17px;
 }
 
-.project-imgs {
-}
+.project-imgs {}
 
 .project-description {
   font-size: 12px;
@@ -188,8 +178,8 @@ img {
 }
 
 /** Contact Form */
-@import url(https://fonts.googleapis.com/css?family=Lato:100,300,400);
 
+@import url(https://fonts.googleapis.com/css?family=Lato:100,300,400);
 input::-webkit-input-placeholder, textarea::-webkit-input-placeholder {
   color: #aca49c;
   font-size: 0.875em;
@@ -276,14 +266,11 @@ input {
   width: 470px;
   height: 50px;
   padding: 0px 15px 0px 15px;
-
   background: transparent;
   outline: none;
   color: #726659;
-
   border: solid 1px #b3aca7;
   border-bottom: none;
-
   transition: all 0.3s ease-in-out;
   -webkit-transition: all 0.3s ease-in-out;
   -moz-transition: all 0.3s ease-in-out;
@@ -301,16 +288,12 @@ textarea {
   height: 110px;
   max-height: 110px;
   padding: 15px;
-
   background: transparent;
   outline: none;
-
   color: #726659;
   font-family: 'Work Sans', sans-serif;
   font-size: 0.875em;
-
   border: solid 1px #b3aca7;
-
   transition: all 0.3s ease-in-out;
   -webkit-transition: all 0.3s ease-in-out;
   -moz-transition: all 0.3s ease-in-out;
@@ -324,17 +307,13 @@ textarea:hover {
 
 #submit {
   width: 470px;
-
   padding: 0;
   margin: -5px 0px 0px 0px;
-
   font-family: 'Work Sans', sans-serif;
   font-size: 0.875em;
   color: #b3aca7;
-
-  outline:none;
+  outline: none;
   cursor: pointer;
-
   border: solid 1px #b3aca7;
   border-top: none;
 }
@@ -343,8 +322,82 @@ textarea:hover {
   color: #e2dedb;
 }
 
+#contact-icons {
+  margin-left: 38.5%;
+  height: 30px;
+  overflow: hidden;
+}
+
+.icon-container {
+  display: inline-block;
+  margin-left: 5%;
+  float: left;
+}
+
 #copyright-footer {
   color: #726659;
   font-family: 'Work Sans', sans-serif;
   text-align: center;
+  vertical-align: text-bottom;
+}
+
+/*** Media Queries **/
+
+@media screen and (max-width: 1150px) {
+  #intro-name {
+    font-size: 63px;
+  }
+  #description {
+    margin-top: 30%;
+
+  }
+}
+
+@media screen and (max-width: 900px) {
+  #profile {
+    display: none;
+  }
+  #description {
+    margin-top: 32%;
+  }
+  #about-content {
+    margin-left: 20%;
+    margin-right: 20%;
+  }
+  #copyright-footer{
+    display: none;
+  }
+}
+
+
+@media screen and (max-width: 750px) {
+  #description {
+    margin-top: 34%;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  #description {
+    margin-top: 36%;
+  }
+}
+
+@media screen and (max-width: 510px) {
+  #intro-name {
+    font-size: 50px;
+  }
+  #description {
+    margin-top: 37%;
+    font-size: 12px;
+  }
+}
+
+@media screen and (max-width: 448px) {
+  #intro-name {
+    font-size: 40px;
+  }
+  #description {
+    margin-top: 38%;
+    font-size: 10px;
+  }
 }
