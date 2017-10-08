@@ -158,7 +158,11 @@ img {
   font-size: 17px;
 }
 
-.project-imgs {}
+.project-imgs {
+  display: block;
+  margin: auto;
+  max-height: 400px;
+}
 
 .project-description {
   font-size: 12px;
